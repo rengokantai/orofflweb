@@ -67,8 +67,28 @@ onchecking
 ondownloading
 onerror
 onnoupdate
-onobsolete
+onobsolete  //manifest file does not exist
 onprogress
 onupdateready
 status
 ```
+Note application cache will not update partial resources. Only update all or fail all
+
+- Advanced
+fallback (if original image is not available, then show offline.jpg)
+```
+CACHE MANIFEST
+
+CACHE:
+css/xxx.css
+//fonts.googleapis.com/css?family=xxxx
+file1
+file2
+
+NETWORK:
+*
+
+FALLBACK:
+original.jpg offline.jpg
+```
+issue: how can we update partial resouces?
