@@ -92,3 +92,11 @@ FALLBACK:
 original.jpg offline.jpg
 ```
 issue: how can we update partial resouces?
+
+- Service workers install
+debug: resources->service workers
+
+- Cache API
+see project(serviceworker.js)
+debug: resources->cache storage
+
